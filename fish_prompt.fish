@@ -13,8 +13,8 @@ function show_path -d "Prints current directory"
     set_color blue
     echo -en "["
 
-    set_color blue
-    echo -en $(whoami)@$(cat /etc/hostname) - 
+#    set_color blue
+#    echo -en $(whoami)@$(cat /etc/hostname) - 
 
     set_color blue
     echo -en (pwd | sed "s,^$HOME,~,")
