@@ -30,6 +30,6 @@ function show_status -a last_status -d "Prints red/grey colon based on status"
     end
 
     set_color $current_color
-    echo -en "$ "
+    echo -en "\$ "
     set_color normal
 end
