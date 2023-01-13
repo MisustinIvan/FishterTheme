@@ -1,4 +1,4 @@
-function fish_prompt -d "Fishbone custom prompt"
+function fish_prompt -d "Fishter custom prompt"
 
     # Keep the command executed status
     set --local last_status $status
@@ -8,16 +8,16 @@ function fish_prompt -d "Fishbone custom prompt"
 end
 
 
-function show_path -d "Prints current directory abbreviated"
+function show_path -d "Prints current directory"
 
     set_color blue
     echo -en "["
 
-    set_color yellow
+    set_color blue
     echo -en (pwd | sed "s,^$HOME,~,")
 
     set_color blue
-    echo -en "] "
+    echo -en "]"
 end
 
 
@@ -30,6 +30,6 @@ function show_status -a last_status -d "Prints red/grey colon based on status"
     end
 
     set_color $current_color
-    echo -en ": "
+    echo -en "$ "
     set_color normal
 end
