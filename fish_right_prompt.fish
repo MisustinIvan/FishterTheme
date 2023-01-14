@@ -8,7 +8,7 @@ function fish_right_prompt -d "Right side prompt message"
 
     show_virtualenv_name
     show_git_info
-    echo -en (date +%H:%M:%S)
+    # echo -en (date +%H:%M:%S)
 
     set_color normal
 end
